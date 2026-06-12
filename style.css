@@ -24,6 +24,30 @@ body {
      overflow-x: hidden;
 }
 
+.navigation,
+.hero-content header .title,
+.hero-content header .subtitle,
+.hero-content header .button {
+  opacity: 0;
+  animation: reveal-up 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.navigation                    { animation-delay: 0.1s; }
+.hero-content header .title    { animation-delay: 0.25s; }
+.hero-content header .subtitle { animation-delay: 0.4s; }
+.hero-content header .button   { animation-delay: 0.55s; }
+
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .hero-section {
     position: relative;
     overflow: visible; 
