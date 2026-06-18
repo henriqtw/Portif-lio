@@ -1,7 +1,7 @@
 # Meu Portfólio Web
 
 <p align="center">
-  <a href="https://henriqtw.github.io/Portif-lio/">
+  <a href="https://henriqtw.github.io/Portif-lio/" target="_blank">
     <img src="https://img.shields.io/badge/Acessar%20Portf%C3%B3lio-Acesse%20Aqui-🚀%20Acesse%20Aqui?style=for-the-badge&logo=github&logoColor=white&color=007ACC" alt="Link do Portfólio">
   </a>
 </p>
