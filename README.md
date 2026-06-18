@@ -43,6 +43,3 @@ Se quiser baixar e rodar este projeto na sua máquina:
 1. Clone o repositório:
    ```bash
    git clone [https://github.com/henriqtw/Portif-lio.git](https://github.com/henriqtw/Portif-lio.git)
-1. Clone o repositório:
-   ```bash
-   git clone [https://github.com/henriqtw/Portif-lio.git](https://github.com/henriqtw/Portif-lio.git)
