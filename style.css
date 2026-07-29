@@ -206,6 +206,7 @@ header {
 }
 
 .question {
+    text-decoration: none;
     color: var(--branco);
     font-size: 20px;
     font-weight: 400;
@@ -215,7 +216,6 @@ header {
     text-align: center;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    text-decoration: none;
 }
 
 .button {
@@ -233,9 +233,6 @@ header {
     color: inherit;
 }
 
-.button:hover {
-    transform: scale(1.05);
-}
 
 .cards {
     display: flex;
