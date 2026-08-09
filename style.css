@@ -1117,9 +1117,33 @@ header {
 }
 
 /* ========== DESKTOP GRANDE (1440px+) ========== */
+
+
+
+
 @media (min-width: 1440px) {
+  .navigation {
+    padding: 32px 60px;
+    margin-bottom: 20px;
+  }
+
+  .nav-list {
+    gap: 32px;
+  }
+
+  .nav-link {
+    font-size: 28px;
+  }
+
+  .glass {
+    padding: 8px 20px;
+    border-radius: 12px;
+  }
+
   .title {
     font-size: 140px;
+    margin-top: 60px;
+    line-height: 1.1;
   }
 
   .subtitle {
@@ -1133,112 +1157,101 @@ header {
   .projetos, .evolucao, .certificacoes, .contato {
     padding: 100px 80px;
   }
-
-  .nav-link {
-    font-size: 28px;
-  }
 }
 
-/* ========== TABLET GRANDE (1024px - 1439px) ========== */
+
 @media (max-width: 1439px) and (min-width: 1025px) {
+  .navigation {
+    padding: 28px 50px;
+    margin-bottom: 16px;
+  }
+
+  .nav-list {
+    gap: 28px;
+  }
+
+  .nav-link {
+    font-size: 22px;
+  }
+
+  .glass {
+    padding: 7px 18px;
+    border-radius: 10px;
+  }
+
   .title {
     font-size: 100px;
-    padding: 25px;
+    margin-top: 50px;
+    line-height: 1.1;
   }
 
   .subtitle {
     font-size: 26px;
-    padding: 20px;
-  }
-
-  .Main {
-    padding: 50px 40px;
-  }
-
-  .evolucao-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .evo-card.is-now {
-    grid-column: span 2;
-  }
-
-  .cert-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .timeline-track {
-    padding: 12px 40px 24px;
-  }
-
-  .projetos, .evolucao, .certificacoes, .contato {
-    padding: 70px 40px;
   }
 
   header {
     padding: 60px 40px 80px;
   }
 
-  .nav-link {
-    font-size: 22px;
+  .projetos, .evolucao, .certificacoes, .contato {
+    padding: 70px 40px;
   }
 }
 
-/* ========== TABLET MÉDIO (768px - 1024px) ========== */
+
 @media (max-width: 1024px) and (min-width: 769px) {
+  .navigation {
+    padding: 24px 40px;
+    margin-bottom: 14px;
+  }
+
+  .nav-list {
+    gap: 20px;
+  }
+
+  .nav-link {
+    font-size: 18px;
+  }
+
+  .glass {
+    padding: 6px 16px;
+    border-radius: 9px;
+  }
+
   .title {
     font-size: 70px;
-    padding: 20px;
+    margin-top: 45px;
+    line-height: 1.15;
   }
 
   .subtitle {
     font-size: 22px;
-    padding: 20px;
-  }
-
-  .Main {
-    padding: 40px 30px;
-  }
-
-  .evolucao-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .evo-card.is-now {
-    grid-column: span 2;
-  }
-
-  .cert-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .timeline-track {
-    padding: 12px 30px 24px;
-  }
-
-  .projetos, .evolucao, .certificacoes, .contato {
-    padding: 60px 30px;
   }
 
   header {
     padding: 50px 30px 70px;
   }
 
-  .nav-link {
-    font-size: 18px;
+  .projetos, .evolucao, .certificacoes, .contato {
+    padding: 60px 30px;
+  }
+
+  .Main {
+    padding: 40px 30px;
   }
 }
 
-/* ========== TABLET PEQUENO (600px - 768px) ========== */
+
 @media (max-width: 768px) and (min-width: 601px) {
   .navigation {
-    padding: 20px 12px;
+    padding: 20px 30px;
+    margin-bottom: 12px;
   }
 
   .nav-list {
     flex-wrap: nowrap;
     justify-content: center;
-    gap: 10px;
+    gap: 14px;
   }
 
   .nav-link {
@@ -1247,18 +1260,25 @@ header {
 
   .glass {
     padding: 5px 14px;
+    border-radius: 8px;
   }
 
   .title {
     font-size: 55px;
-    padding: 18px;
-    margin-top: 140px;
-    line-height: 1.2;
+    margin-top: 40px;
+    line-height: 1.15;
   }
 
   .subtitle {
-    font-size: 22px;
-    padding: 16px;
+    font-size: 20px;
+  }
+
+  header {
+    padding: 40px 25px 60px;
+  }
+
+  .projetos, .evolucao, .certificacoes, .contato {
+    padding: 50px 25px;
   }
 
   .Main {
@@ -1271,13 +1291,8 @@ header {
   }
 
   .card {
-    width: 100%;
     max-width: 250px;
     padding: 22px;
-  }
-
-  .projetos {
-    padding: 50px 25px;
   }
 
   .titulo {
@@ -1290,28 +1305,8 @@ header {
     gap: 18px;
   }
 
-  .card-grande {
-    grid-column: span 1;
-  }
-
-  .card-grande .projeto-thumb {
-    aspect-ratio: 16/10;
-  }
-
-  .projeto-info {
-    padding: 16px 18px 20px;
-  }
-
-  .projeto-nome {
-    font-size: 16px;
-  }
-
-  .timeline {
-    padding: 45px 0 65px;
-  }
-
   .timeline-track {
-    padding: 12px 25px 24px;
+    padding: 16px 25px 28px;
   }
 
   .timeline-card {
@@ -1319,26 +1314,9 @@ header {
     padding: 28px 22px;
   }
 
-  .evolucao {
-    padding: 50px 25px;
-  }
-
   .evolucao-grid {
     grid-template-columns: 1fr;
     gap: 20px;
-  }
-
-  .evo-card.is-now {
-    grid-column: span 1;
-  }
-
-  .diff-track {
-    justify-content: flex-start;
-    padding: 4px 25px 16px;
-  }
-
-  .certificacoes {
-    padding: 50px 25px;
   }
 
   .cert-grid {
@@ -1346,86 +1324,50 @@ header {
     gap: 16px;
   }
 
-  .cert-subtitulo {
-    font-size: 16px;
-    margin-top: -12px;
-  }
-
-  .contato {
-    padding: 50px 25px 80px;
-  }
-
-  .contato-subtitulo {
-    font-size: 16px;
-    margin-top: -12px;
-  }
-
   .contato-corpo {
     grid-template-columns: 1fr;
-    max-width: 100%;
     gap: 32px;
   }
-
-  .rede-card, .contato-item {
-    padding: 18px;
-  }
-
-  .rede-icone, .contato-item-icone {
-    width: 56px;
-    height: 56px;
-  }
-
-  header {
-    padding: 40px 25px 60px;
-  }
-
-  .button {
-    width: 200px;
-    height: 48px;
-  }
-
-  .question {
-    font-size: 16px;
-  }
-
-  .blob.b1 { width: 350px; height: 350px; }
-  .blob.b2 { width: 280px; height: 280px; }
-  .blob.b3 { width: 250px; height: 250px; }
-  .blob.b4 { width: 200px; height: 200px; }
-  .blob.b5 { width: 180px; height: 180px; }
 }
 
-/* ========== CELULAR GRANDE (480px - 600px) ========== */
+
 @media (max-width: 600px) and (min-width: 481px) {
   .navigation {
-    padding: 14px 8px;
+    padding: 18px 20px;
+    margin-bottom: 10px;
   }
 
   .nav-list {
     flex-wrap: nowrap;
     justify-content: center;
-    gap: 6px;
+    gap: 10px;
   }
 
   .nav-link {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .glass {
     padding: 4px 12px;
-    border-radius: 8px;
+    border-radius: 7px;
   }
 
   .title {
     font-size: 48px;
-    padding: 16px;
-    margin-top: 120px;
-    line-height: 1.2;
+    margin-top: 35px;
+    line-height: 1.15;
   }
 
   .subtitle {
     font-size: 18px;
-    padding: 14px;
+  }
+
+  header {
+    padding: 35px 20px 50px;
+  }
+
+  .projetos, .evolucao, .certificacoes, .contato {
+    padding: 45px 20px;
   }
 
   .Main {
@@ -1438,7 +1380,6 @@ header {
   }
 
   .card {
-    width: 100%;
     max-width: 220px;
     padding: 20px;
     height: 130px;
@@ -1447,10 +1388,6 @@ header {
   .card-icon {
     width: 60px;
     height: 60px;
-  }
-
-  .projetos {
-    padding: 45px 20px;
   }
 
   .titulo {
@@ -1471,26 +1408,18 @@ header {
     font-size: 14px;
   }
 
-  .projeto-tag {
-    font-size: 11px;
-  }
-
   .timeline {
     padding: 40px 0 60px;
   }
 
   .timeline-track {
-    padding: 12px 16px 24px;
+    padding: 14px 20px 26px;
   }
 
   .timeline-card {
     width: 240px;
     padding: 24px 20px;
     min-height: 160px;
-  }
-
-  .timeline-desc {
-    font-size: 12px;
   }
 
   .evolucao {
@@ -1502,53 +1431,18 @@ header {
     gap: 18px;
   }
 
-  .evo-card.is-now {
-    grid-column: span 1;
-  }
-
   .diff-track {
-    justify-content: flex-start;
-    padding: 4px 16px 12px;
+    padding: 6px 20px 16px;
+    gap: 10px;
   }
 
   .diff-pill {
     padding: 12px 16px;
-    gap: 10px;
-  }
-
-  .certificacoes {
-    padding: 45px 20px;
   }
 
   .cert-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 14px;
-  }
-
-  .cert-cabecalho {
-    text-align: center;
-  }
-
-  .cert-subtitulo {
-    font-size: 14px;
-    margin-top: -10px;
-  }
-
-  .cert-num {
-    font-size: 48px;
-  }
-
-  .contato {
-    padding: 45px 20px 70px;
-  }
-
-  .contato-cabecalho {
-    text-align: center;
-  }
-
-  .contato-subtitulo {
-    font-size: 14px;
-    margin-top: -10px;
   }
 
   .contato-corpo {
@@ -1560,40 +1454,6 @@ header {
     padding: 16px;
   }
 
-  .rede-icone, .contato-item-icone {
-    width: 50px;
-    height: 50px;
-  }
-
-  .rede-nome {
-    font-size: 15px;
-  }
-
-  .rede-usuario {
-    font-size: 12px;
-  }
-
-  .contato-item-label {
-    font-size: 10px;
-  }
-
-  .contato-item-valor {
-    font-size: 16px;
-  }
-
-  header {
-    padding: 30px 18px 45px;
-  }
-
-  .button {
-    width: 180px;
-    height: 44px;
-  }
-
-  .question {
-    font-size: 13px;
-  }
-
   .blob.b1 { width: 300px; height: 300px; }
   .blob.b2 { width: 240px; height: 240px; }
   .blob.b3 { width: 200px; height: 200px; }
@@ -1601,37 +1461,44 @@ header {
   .blob.b5 { width: 140px; height: 140px; }
 }
 
-/* ========== CELULAR MÉDIO (414px - 480px) ========== */
+
 @media (max-width: 480px) and (min-width: 415px) {
   .navigation {
-    padding: 12px 6px;
+    padding: 16px 16px;
+    margin-bottom: 8px;
   }
 
   .nav-list {
     flex-wrap: nowrap;
     justify-content: center;
-    gap: 5px;
+    gap: 8px;
   }
 
   .nav-link {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .glass {
-    padding: 4px 10px;
-    border-radius: 8px;
+    padding: 3px 10px;
+    border-radius: 6px;
   }
 
   .title {
     font-size: 42px;
-    padding: 14px;
-    margin-top: 100px;
-    line-height: 1.1;
+    margin-top: 32px;
+    line-height: 1.15;
   }
 
   .subtitle {
     font-size: 16px;
-    padding: 12px;
+  }
+
+  header {
+    padding: 32px 18px 45px;
+  }
+
+  .projetos, .evolucao, .certificacoes, .contato {
+    padding: 40px 16px;
   }
 
   .Main {
@@ -1644,7 +1511,6 @@ header {
   }
 
   .card {
-    width: 100%;
     max-width: 200px;
     padding: 18px;
     height: 120px;
@@ -1655,18 +1521,9 @@ header {
     height: 54px;
   }
 
-  .projetos {
-    padding: 40px 16px;
-  }
-
   .titulo {
     font-size: 20px;
     margin-bottom: 24px;
-  }
-
-  .projetos-grid {
-    grid-template-columns: 1fr;
-    gap: 14px;
   }
 
   .projeto-info {
@@ -1682,7 +1539,7 @@ header {
   }
 
   .timeline-track {
-    padding: 12px 14px 20px;
+    padding: 12px 16px 22px;
   }
 
   .timeline-card {
@@ -1695,10 +1552,6 @@ header {
     font-size: 11px;
   }
 
-  .adendo {
-    font-size: 12px;
-  }
-
   .evolucao {
     padding: 40px 16px;
   }
@@ -1708,70 +1561,22 @@ header {
     gap: 16px;
   }
 
-  .evo-periodo {
-    font-size: 12px;
-  }
-
-  .evo-nome {
-    font-size: 16px;
-  }
-
   .evo-desc {
     font-size: 13px;
   }
 
   .diff-track {
-    justify-content: flex-start;
-    padding: 4px 14px 12px;
-    gap: 10px;
+    padding: 5px 16px 14px;
+    gap: 9px;
   }
 
   .diff-pill {
     padding: 10px 14px;
-    gap: 10px;
-  }
-
-  .diff-icon {
-    font-size: 18px;
-  }
-
-  .diff-label {
-    font-size: 12px;
-  }
-
-  .certificacoes {
-    padding: 40px 16px;
   }
 
   .cert-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
-  }
-
-  .cert-nome {
-    font-size: 13px;
-  }
-
-  .cert-emissor {
-    font-size: 12px;
-  }
-
-  .cert-subtitulo {
-    font-size: 13px;
-    margin-top: -8px;
-  }
-
-  .cert-num {
-    font-size: 40px;
-  }
-
-  .contato {
-    padding: 40px 16px 65px;
-  }
-
-  .contato-subtitulo {
-    font-size: 13px;
-    margin-top: -8px;
   }
 
   .contato-corpo {
@@ -1783,46 +1588,6 @@ header {
     padding: 14px;
   }
 
-  .rede-icone, .contato-item-icone {
-    width: 48px;
-    height: 48px;
-  }
-
-  .rede-nome {
-    font-size: 14px;
-  }
-
-  .rede-usuario {
-    font-size: 11px;
-  }
-
-  .rede-seta {
-    width: 32px;
-    height: 32px;
-  }
-
-  .contato-item-label {
-    font-size: 9px;
-  }
-
-  .contato-item-valor {
-    font-size: 15px;
-  }
-
-  header {
-    padding: 28px 16px 40px;
-  }
-
-  .button {
-    width: 170px;
-    height: 42px;
-  }
-
-  .question {
-    font-size: 12px;
-    padding: 12px;
-  }
-
   .blob.b1 { width: 280px; height: 280px; }
   .blob.b2 { width: 220px; height: 220px; }
   .blob.b3 { width: 200px; height: 200px; }
@@ -1830,37 +1595,44 @@ header {
   .blob.b5 { width: 140px; height: 140px; }
 }
 
-/* ========== CELULAR PEQUENO (375px - 414px) ========== */
+
 @media (max-width: 414px) and (min-width: 376px) {
   .navigation {
-    padding: 10px 4px;
+    padding: 14px 12px;
+    margin-bottom: 6px;
   }
 
   .nav-list {
     flex-wrap: nowrap;
     justify-content: center;
-    gap: 3px;
+    gap: 6px;
   }
 
   .nav-link {
-    font-size: 11px;
+    font-size: 12px;
   }
 
   .glass {
-    padding: 3px 8px;
-    border-radius: 6px;
+    padding: 3px 9px;
+    border-radius: 5px;
   }
 
   .title {
     font-size: 38px;
-    padding: 12px;
-    margin-top: 90px;
+    margin-top: 28px;
     line-height: 1.1;
   }
 
   .subtitle {
     font-size: 15px;
-    padding: 10px;
+  }
+
+  header {
+    padding: 28px 14px 40px;
+  }
+
+  .projetos, .evolucao, .certificacoes, .contato {
+    padding: 38px 14px;
   }
 
   .Main {
@@ -1873,7 +1645,6 @@ header {
   }
 
   .card {
-    width: 100%;
     max-width: 180px;
     padding: 16px;
     height: 110px;
@@ -1884,18 +1655,9 @@ header {
     height: 50px;
   }
 
-  .projetos {
-    padding: 38px 14px;
-  }
-
   .titulo {
     font-size: 18px;
     margin-bottom: 20px;
-  }
-
-  .projetos-grid {
-    grid-template-columns: 1fr;
-    gap: 12px;
   }
 
   .projeto-info {
@@ -1920,7 +1682,7 @@ header {
   }
 
   .timeline-track {
-    padding: 10px 12px 18px;
+    padding: 10px 14px 20px;
   }
 
   .timeline-card {
@@ -1935,7 +1697,6 @@ header {
 
   .adendo {
     font-size: 11px;
-    margin-bottom: 40px;
   }
 
   .evolucao {
@@ -1947,10 +1708,6 @@ header {
     gap: 14px;
   }
 
-  .evo-periodo {
-    font-size: 11px;
-  }
-
   .evo-nome {
     font-size: 15px;
   }
@@ -1959,36 +1716,17 @@ header {
     font-size: 12px;
   }
 
-  .evo-thumb {
-    aspect-ratio: 16/10;
-    height: 140px;
-  }
-
   .diff-track {
-    justify-content: flex-start;
-    padding: 4px 12px 10px;
+    padding: 5px 14px 12px;
     gap: 8px;
   }
 
   .diff-pill {
     padding: 8px 12px;
-    gap: 8px;
-  }
-
-  .diff-icon {
-    font-size: 16px;
   }
 
   .diff-label {
     font-size: 11px;
-  }
-
-  .diff-check {
-    font-size: 10px;
-  }
-
-  .certificacoes {
-    padding: 38px 14px;
   }
 
   .cert-grid {
@@ -2000,38 +1738,8 @@ header {
     font-size: 12px;
   }
 
-  .cert-emissor {
-    font-size: 11px;
-  }
-
-  .cert-categoria {
-    font-size: 10px;
-  }
-
-  .cert-data {
-    font-size: 9px;
-  }
-
-  .cert-subtitulo {
-    font-size: 12px;
-    margin-top: -6px;
-  }
-
   .cert-num {
     font-size: 36px;
-  }
-
-  .cert-num-label {
-    font-size: 12px;
-  }
-
-  .contato {
-    padding: 38px 14px 60px;
-  }
-
-  .contato-subtitulo {
-    font-size: 12px;
-    margin-top: -6px;
   }
 
   .contato-corpo {
@@ -2048,54 +1756,6 @@ header {
     height: 44px;
   }
 
-  .rede-nome {
-    font-size: 13px;
-  }
-
-  .rede-usuario {
-    font-size: 10px;
-  }
-
-  .rede-seta {
-    width: 30px;
-    height: 30px;
-  }
-
-  .contato-item-label {
-    font-size: 8px;
-  }
-
-  .contato-item-valor {
-    font-size: 14px;
-  }
-
-  .contato-disponivel {
-    padding: 10px 16px;
-  }
-
-  .contato-disponivel-dot {
-    width: 8px;
-    height: 8px;
-  }
-
-  .contato-disponivel-texto {
-    font-size: 12px;
-  }
-
-  header {
-    padding: 25px 14px 35px;
-  }
-
-  .button {
-    width: 160px;
-    height: 40px;
-  }
-
-  .question {
-    font-size: 11px;
-    padding: 10px;
-  }
-
   .blob.b1 { width: 240px; height: 240px; top: -100px; left: -60px; }
   .blob.b2 { width: 180px; height: 180px; top: 40px; right: -50px; }
   .blob.b3 { width: 160px; height: 160px; bottom: -60px; left: 80px; }
@@ -2103,16 +1763,17 @@ header {
   .blob.b5 { width: 110px; height: 110px; top: 120px; left: 150px; }
 }
 
-/* ========== CELULAR MUITO PEQUENO (320px - 375px) ========== */
+
 @media (max-width: 375px) {
   .navigation {
-    padding: 8px 2px;
+    padding: 12px 10px;
+    margin-bottom: 4px;
   }
 
   .nav-list {
     flex-wrap: nowrap;
     justify-content: center;
-    gap: 2px;
+    gap: 4px;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
@@ -2123,12 +1784,12 @@ header {
   }
 
   .nav-link {
-    font-size: 10px;
+    font-size: 11px;
     white-space: nowrap;
   }
 
   .glass {
-    padding: 2px 6px;
+    padding: 2px 8px;
     border-radius: 5px;
   }
 
@@ -2138,14 +1799,20 @@ header {
 
   .title {
     font-size: 32px;
-    padding: 10px;
-    margin-top: 80px;
+    margin-top: 24px;
     line-height: 1.1;
   }
 
   .subtitle {
     font-size: 14px;
-    padding: 8px;
+  }
+
+  header {
+    padding: 24px 12px 36px;
+  }
+
+  .projetos, .evolucao, .certificacoes, .contato {
+    padding: 32px 12px;
   }
 
   .Main {
@@ -2158,7 +1825,6 @@ header {
   }
 
   .card {
-    width: 100%;
     max-width: 160px;
     padding: 14px;
     height: 100px;
@@ -2167,10 +1833,6 @@ header {
   .card-icon {
     width: 44px;
     height: 44px;
-  }
-
-  .projetos {
-    padding: 32px 12px;
   }
 
   .titulo {
@@ -2205,7 +1867,7 @@ header {
   }
 
   .timeline-track {
-    padding: 8px 10px 16px;
+    padding: 8px 12px 18px;
   }
 
   .timeline-card {
@@ -2233,7 +1895,6 @@ header {
 
   .adendo {
     font-size: 10px;
-    margin-bottom: 35px;
   }
 
   .evolucao {
@@ -2247,7 +1908,6 @@ header {
 
   .evo-badge {
     font-size: 11px;
-    padding: 4px 10px;
   }
 
   .evo-num {
@@ -2268,12 +1928,6 @@ header {
 
   .evo-tag {
     font-size: 10px;
-    padding: 4px 8px;
-  }
-
-  .evo-link {
-    width: 12px;
-    height: 12px;
   }
 
   .diff-titulo {
@@ -2281,14 +1935,12 @@ header {
   }
 
   .diff-track {
-    justify-content: flex-start;
-    padding: 4px 10px 8px;
+    padding: 4px 12px 10px;
     gap: 6px;
   }
 
   .diff-pill {
     padding: 6px 10px;
-    gap: 6px;
   }
 
   .diff-icon {
@@ -2338,11 +1990,6 @@ header {
     font-size: 8px;
   }
 
-  .cert-subtitulo {
-    font-size: 11px;
-    margin-top: -5px;
-  }
-
   .cert-num {
     font-size: 32px;
   }
@@ -2357,11 +2004,6 @@ header {
 
   .contato-cabecalho {
     text-align: center;
-  }
-
-  .contato-subtitulo {
-    font-size: 11px;
-    margin-top: -5px;
   }
 
   .contato-corpo {
@@ -2414,20 +2056,6 @@ header {
 
   .contato-disponivel-texto {
     font-size: 11px;
-  }
-
-  header {
-    padding: 22px 12px 32px;
-  }
-
-  .button {
-    width: 150px;
-    height: 38px;
-  }
-
-  .question {
-    font-size: 10px;
-    padding: 8px;
   }
 
   .projetos-separador {
