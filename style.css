@@ -332,6 +332,7 @@ header {
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
+    display:block;
 }
 
 .projeto-card:hover {
@@ -344,6 +345,12 @@ header {
     aspect-ratio: 16/10;
     object-fit: cover;
     display: block;
+    cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.projeto-thumb:hover {
+  transform: scale(1.02);
 }
 
 .card-grande {
